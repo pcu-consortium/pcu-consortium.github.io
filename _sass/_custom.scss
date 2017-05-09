@@ -1,0 +1,108 @@
+$pcu-color-1: #00517c;
+$pcu-color-2: #8bc34a;
+
+main {
+  margin-top: 50px;
+  display: block;
+}
+
+#mainNav {
+  .navbar-brand {
+    float: none;
+    color: $pcu-color-2;
+  }
+}
+
+.pcu-margin-bottom {
+  margin-bottom: 50px;
+}
+
+#overview {
+  min-height: 700px;
+  display: flex;
+  background-color: $pcu-color-1;
+  background-image: url("../images/neurons.jpg");
+  background-size: cover;
+  color: $pcu-color-2;
+
+  .overlay {
+    display: block;
+    //background-color: rgba(0, 81, 124, 0.66);
+    background-color: rgba(0, 0, 0, 0.66);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+  .container-fluid {
+    margin: auto;
+  }
+
+  img {
+   height: 380px;
+   width: 380px;
+   margin: auto;
+  }
+}
+
+#use-cases {
+  min-height: 700px;
+  display: flex;
+
+  .container-fluid {
+    margin: auto;
+  }
+
+  .use-case-circle {
+   background-color: $pcu-color-1;
+   border: 5px solid $pcu-color-2;
+   height: 150px;
+   width: 150px;
+   -moz-border-radius: 75px;
+   -webkit-border-radius: 75px;
+   display: inline-flex;
+
+   img {
+     height: 64px;
+     width: 64px;
+     margin: auto;
+   }
+  }
+}
+
+#partners {
+  min-height: 700px;
+  display: flex;
+  background-color: #FFF;
+
+  .container-fluid {
+    margin: auto;
+  }
+
+  img {
+    max-height: 100px;
+    margin: 20px;
+    max-width: 200px;
+  }
+}
+
+footer {
+  padding: 20px;
+  background-color: $pcu-color-1;
+  color: #fff;
+  font-size: 10px;
+
+  a{
+    color: #eee;
+  }
+
+  a:hover{
+    color: $pcu-color-2;
+  }
+
+  img {
+   height: 128px;
+   width: 128px;
+   margin: auto;
+  }
+}

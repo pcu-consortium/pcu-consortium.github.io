@@ -1,0 +1,46 @@
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+          	<div  class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+        			<nav>
+        			  <a href="/" title="homepage" class="logo-container">
+                  <span class="footer-logo-circle">
+                      <img class="footer-logo-circle-img" src="/assets/images/logo-no-bg.png" />
+                  </span>
+        			  </a>
+        			</nav>
+            </div>
+          	<div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+        			<nav>
+        			  <h6>About</h6>
+        			  <ul class="list-unstyled">
+                  {% for my_page in site.nav %}
+                    <li>
+                        <a href="{{ my_page.url }}">{{ my_page.title }}</a>
+                    </li>
+                  {% endfor %}
+        			  </ul>
+        			</nav>
+          	</div>
+            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+              <nav>
+                <h6>Use Cases</h6>
+                <ul class="list-unstyled">
+                  <li><a href="/enterprise-search">Enterprise Search</a></li>
+                  <li><a href="/online-retail">E-commerce</a></li>
+                  <li><a href="/customer-insights">Customer Insights</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-4 col-sm-12 col-md-3 col-lg-3">
+      			<div class="row">
+      			  <nav class="col-xs-12 col-sm-6 col-md-12 social-links">
+      				<h6 class="title">Follow Us</h6>
+      				<a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i</a>
+      				<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i</a>
+      			  </nav>
+      			</div>
+      		  </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,50 @@
+#general
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://pcu-consortium.github.io" # the base hostname & protocol for your site
+permalink: /blog/:year/:title/
+lang: fr_FR
+jekyll-mentions:
+  base_url: https://twitter.com
+
+# seo
+title: Plateforme de Connaissances Unifiées
+email: pcu-drive@googlegroups.com
+description: > # this means to ignore newlines until "baseurl:"
+  Plateforme de Connaissances Unifiées
+author:
+  name: PCU Consortium
+social:
+  name: PCU Consortium
+  links:
+    - https://twitter.com/pcu2017
+    - https://github.com/pcu
+
+
+#social media
+twitter_username: pcu2017
+github_username: pcu-consortium
+
+#nav
+nav:
+  - title: Overview
+    url: /overview
+  - title: Use Cases
+    url: /use-cases
+  - title: Resources
+    url: /resources
+  - title: News
+    url: /news
+  - title: Community
+    url: /community
+
+
+# Build settings
+markdown: kramdown
+timezone: Europe/Paris
+encoding: utf-8
+gems:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
