@@ -1,9 +1,11 @@
+//vars
+$pcu-color-0: #eee;
 $pcu-color-1: #00517c;
 $pcu-color-2: #8bc34a;
 
-main {
-  margin-top: 50px;
-  display: block;
+//general
+body {
+  padding-top: 50px;
 }
 
 #mainNav {
@@ -13,11 +15,118 @@ main {
   }
 }
 
+#socialNav{
+  a{
+    margin: 4px;
+  }
+  p {
+    margin-top: 40px;
+  }
+}
+
+#subNav {
+  z-index: 100;
+
+  &.fix-subNav {
+    background-color: $pcu-color-0;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+  }
+
+  .sub-nav{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid $pcu-color-1;
+    border-bottom: 1px solid $pcu-color-1;
+
+    li {
+      display: inline-block;
+      margin: 2px;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      border: 2px solid $pcu-color-0;
+      color: $pcu-color-1;
+      text-align: center;
+      vertical-align: middle;
+      padding: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+
+      &:hover{
+        border: 2px solid $pcu-color-1;
+      }
+
+      &.active {
+        border: 2px solid $pcu-color-1;
+        background-color: $pcu-color-2;
+      }
+    }
+  }
+}
+
+.page-header {
+  margin-bottom: 20px;
+
+  h4 {
+    color: grey;
+    font-style: italic;
+  }
+}
+
 .pcu-margin-bottom {
   margin-bottom: 50px;
 }
 
-#overview {
+.excerpt{
+  padding: 5px;
+  margin: 5px 0 20px 0;
+  border-left: solid 5px $pcu-color-2;
+  border-radius: 3px;
+  display: inline-flex;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+table {
+  margin: auto;
+  @extend .table;
+  @extend .table-condensed;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: $pcu-color-1;
+  color: $pcu-color-0;
+  font-size: 10px;
+
+  a{
+    color: $pcu-color-0;
+  }
+
+  a:hover{
+    color: $pcu-color-2;
+  }
+
+  img {
+   height: 128px;
+   width: 128px;
+   margin: auto;
+  }
+}
+
+article {
+  border-bottom: 1px solid $pcu-color-2;
+}
+
+//pages
+#home-section-overview {
   min-height: 700px;
   display: flex;
   background-color: $pcu-color-1;
@@ -27,7 +136,6 @@ main {
 
   .overlay {
     display: block;
-    //background-color: rgba(0, 81, 124, 0.66);
     background-color: rgba(0, 0, 0, 0.66);
     width: 100%;
     top: 0;
@@ -45,7 +153,7 @@ main {
   }
 }
 
-#use-cases {
+#home-section-use-cases {
   min-height: 700px;
   display: flex;
 
@@ -70,7 +178,7 @@ main {
   }
 }
 
-#partners {
+#home-section-partners {
   min-height: 700px;
   display: flex;
   background-color: #FFF;
@@ -86,23 +194,15 @@ main {
   }
 }
 
-footer {
-  padding: 20px;
-  background-color: $pcu-color-1;
-  color: #fff;
-  font-size: 10px;
-
-  a{
-    color: #eee;
+.section-pages-collections {
+  article {
+    min-height: 400px;
   }
+}
 
-  a:hover{
-    color: $pcu-color-2;
-  }
-
+#community-article-consortium {
   img {
-   height: 128px;
-   width: 128px;
-   margin: auto;
+    max-height: 50px;
+    max-width: 100px;
   }
 }

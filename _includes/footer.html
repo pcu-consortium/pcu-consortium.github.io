@@ -1,7 +1,7 @@
 <footer>
     <div class="container-fluid">
         <div class="row">
-          	<div  class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+          	<div  class="hidden-xs col-sm-4 col-md-2 col-lg-2">
         			<nav>
         			  <a href="/" title="homepage" class="logo-container">
                   <span class="footer-logo-circle">
@@ -10,9 +10,9 @@
         			  </a>
         			</nav>
             </div>
-          	<div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+          	<div class="hidden-xs col-sm-4 col-md-2 col-lg-2">
         			<nav>
-        			  <h6>About</h6>
+        			  <h6>PCU</h6>
         			  <ul class="list-unstyled">
                   {% for my_page in site.nav %}
                     <li>
@@ -22,7 +22,7 @@
         			  </ul>
         			</nav>
           	</div>
-            <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+            <div class="hidden-xs col-sm-4 col-md-2 col-lg-2">
               <nav>
                 <h6>Use Cases</h6>
                 <ul class="list-unstyled">
@@ -32,13 +32,29 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-sm-4 col-sm-12 col-md-3 col-lg-3">
+            <div class="hidden-xs col-sm-4 col-md-2 col-lg-2">
+              <nav>
+                <h6>About</h6>
+                <ul class="list-unstyled">
+                  {% for my_page in site.aboutNav %}
+                    <li>
+                        <a href="{{ my_page.url }}">{{ my_page.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+            <div class="col-xs-4 col-sm-12 col-md-2 col-lg-2">
       			<div class="row">
-      			  <nav class="col-xs-12 col-sm-6 col-md-12 social-links">
+      			  <nav class="col-xs-12 col-sm-6 col-md-12 social-links" id="socialNav">
       				<h6 class="title">Follow Us</h6>
-      				<a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i</a>
-      				<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i</a>
-      			  </nav>
+      				<a alt="Github" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i</a>
+      				<a alt="Twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i</a>
+              <a alt="Facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fa fa-facebook fa-2x"></i</a>
+              <a alt="Linkedin" href="https://www.linkedin.com/company/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-2x"></i</a>
+              <a alt="Slideshare" href="https://www.slideshare.net/{{ site.slideshare_username }}" target="_blank"><i class="fa fa-slideshare fa-2x"></i</a>
+              <p>&copy; 2017 PCU Consortium</p>
+              </nav>
       			</div>
       		  </div>
         </div>

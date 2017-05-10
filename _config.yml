@@ -7,10 +7,10 @@ jekyll-mentions:
   base_url: https://twitter.com
 
 # seo
-title: Plateforme de Connaissances Unifiées
+title: PCU
 email: pcu-drive@googlegroups.com
 description: > # this means to ignore newlines until "baseurl:"
-  Plateforme de Connaissances Unifiées
+  Unified Knowledge Platform
 author:
   name: PCU Consortium
 social:
@@ -23,6 +23,9 @@ social:
 #social media
 twitter_username: pcu2017
 github_username: pcu-consortium
+facebook_username: pcu-consortium
+linkedin_username: pcu-consortium
+slideshare_username: pcuconsortium
 
 #nav
 nav:
@@ -37,6 +40,15 @@ nav:
   - title: Community
     url: /community
 
+aboutNav:
+  - title: Brand Guideline
+    url: /brand-guideline
+  - title: Terms of use
+    url: /terms-of-use
+
+#collections
+collections:
+- community
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,7 @@
+---
+layout: page-collection
+title: Community
+title_extended: An active community of contributors
+subtitle: Active contributors
+collectionName: community
+---

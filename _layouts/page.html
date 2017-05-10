@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section id="page-{{ page.title|slugify }}">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center page-header">
+          <h1 itemprop="name headline">{{ page.title }}</h1>
+          <h4>{{ page.subtitle }}</h4>
+      </div>
+      <div class="col-lg-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <article id="{{ page.title|slugify }}-article-{{ page.title|slugify }}">
+                <main class="text-justify" itemprop="articleBody">
+                  <div class="excerpt">
+                    <p>{{ page.excerpt }}</p>
+                  </div>
+                  <div class="section">
+                    {{ content }}
+                  </div>
+                </main>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
