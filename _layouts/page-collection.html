@@ -25,7 +25,6 @@ layout: default
           {% for subpage in col.docs %}
           <div class="row">
             <div class="col-lg-12">
-              <a href="#{{ subpage.title|slugify }}" />
               <article id="{{ page.title|slugify }}-article-{{ subpage.title|slugify }}">
                 <header>
                   <h2 itemprop="name headline">{{ subpage.title }}</h1>
