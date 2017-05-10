@@ -59,4 +59,4 @@ gems:
   - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
-exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock", ".travis.yml", "vendor"]
