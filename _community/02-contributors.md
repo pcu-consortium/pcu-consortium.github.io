@@ -17,6 +17,7 @@ excerpt: PCU is a three-year long collaborative project started in November, 201
 | Jean ROHMER          | ESILV           | Vice-President       |
 | Guillaume SANTINI    | LIPN            | Senior lecturer      |
 | Rania SOUSSI         | Armadillo       | R&D Project Manager  |
+| Benoît VAUGON        | Armadillo       | R&D Engineer         |
 | Haifa ZARGAYOUNA     | LIPN            | Lecturer             |
 
 ### How to contribute

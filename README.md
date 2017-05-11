@@ -27,6 +27,7 @@ Assets used
 All foreign assets used in this website are open source:
 
 - http://getbootstrap.com (MIT)
+- https://github.com/google/roboto (Apache 2.0)
 - http://fontawesome.io/ (SIL Open Font License)
 - http://glyphicons.com (Creative Commons)
 - http://iconsdb.com (Creative Commons)
