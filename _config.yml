@@ -64,7 +64,7 @@ gems:
   - jekyll-sitemap
 exclude:
   - .gitignore
-  - README.md
+  - README.adoc
   - Gemfile
   - Gemfile.lock
   - Rakefile

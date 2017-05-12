@@ -22,5 +22,5 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Jekyll
+  Components: Jekyll, Bootstrap
   Doctype: HTML5

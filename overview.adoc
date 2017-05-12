@@ -5,4 +5,4 @@ title_extended: PCU overview
 subtitle: Soon...
 ---
 
-COLLECTION
+COLLECTION.
