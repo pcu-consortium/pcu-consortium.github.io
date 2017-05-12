@@ -10,9 +10,12 @@ ruby RUBY_VERSION
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "3.3.1"
+gem 'coderay', '~> 1.1.0'
+gem 'rake-jekyll', '~> 1.1.0'
 gem "nokogiri"
 gem "fastimage"
 gem "html-proofer"
+gem "travis"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
