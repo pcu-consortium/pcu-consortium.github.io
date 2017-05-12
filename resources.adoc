@@ -5,3 +5,5 @@ title_extended: PCU project resources
 subtitle: Soon...
 collectionName: resources
 ---
+
+COLLECTION

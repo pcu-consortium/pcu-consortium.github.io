@@ -1,0 +1,26 @@
+---
+title: Consortium
+excerpt: The PCU project relies on a consortium of 6 partners bringing together industry and academic leaders, innovative technology startups and open source community expertise.
+---
+=== Partners
+
+|===
+| Who ?                                                  |                 | Project role                         |
+
+| image:/assets/images/partners/smile.png[Smile]         | Smile           | coordinator, architecture, ecommerce |
+| image:/assets/images/partners/lipn.jpg[LIPN]           | LIPN - Paris 13 | machine learning, semantics          |
+| image:/assets/images/partners/esilv.jpg[ESILV]         | ESILV           | pipeline, semantics                  |
+| image:/assets/images/partners/armadillo.png[Armadillo] | ARMADILLO       | integration & mgmt API               |
+| image:/assets/images/partners/proxem.svg[Proxem]       | PROXEM          |  text & opinion mining, B2B          |
+| image:/assets/images/partners/wallix.png[Wallix]       | WALLIX          | enterprise search experience         |
+|===
+
+=== Stackholders
+
+|===
+| Who ?                                                         |                      |
+
+| image:/assets/images/partners/bpi-france.png[BPI France]      | BPI France           |
+| image:/assets/images/partners/systematic.png[Systematic GTLL] | Systematic GTLL      |
+| image:/assets/images/partners/idf.png[Région Ile-de-France]   | Région Ile-de-France |
+|===

@@ -19,7 +19,6 @@ social:
     - https://twitter.com/pcu2017
     - https://github.com/pcu
 
-
 #social media
 twitter_username: PCUproject2017
 github_username: pcu-consortium
@@ -52,6 +51,10 @@ collections:
 
 # Build settings
 markdown: kramdown
+asciidoc: {}
+asciidoctor:
+  attributes:
+    - icons=font
 timezone: Europe/Paris
 encoding: utf-8
 gems:
@@ -59,4 +62,11 @@ gems:
   - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
-exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock", ".travis.yml", "vendor"]
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - .travis.yml
+  - vendor

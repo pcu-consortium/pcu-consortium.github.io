@@ -20,8 +20,9 @@ gem "html-proofer"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
-   gem 'jekyll-mentions', "~> 1.2.0"
-   gem 'jekyll-sitemap', "~> 1.1.1"
-   gem 'jekyll-seo-tag', "~> 2.2.3"
+  gem 'jekyll-asciidoc'
+  gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-mentions', "~> 1.2.0"
+  gem 'jekyll-sitemap', "~> 1.1.1"
+  gem 'jekyll-seo-tag', "~> 2.2.3"
 end

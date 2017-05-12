@@ -96,7 +96,6 @@ body {
 table {
   margin: auto;
   @extend .table;
-  @extend .table-condensed;
 }
 
 footer {

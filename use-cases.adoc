@@ -5,3 +5,5 @@ title_extended: PCU use cases
 subtitle: Soon...
 collectionName: use-cases
 ---
+
+COLLECTION
