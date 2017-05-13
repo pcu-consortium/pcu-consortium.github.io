@@ -1,6 +1,6 @@
 = pcu-consortium.github.io
 
-https://travis-ci.org/pcu-consortium/pcu-consortium.github.io[images:https://travis-ci.org/pcu-consortium/pcu-consortium.github.io.svg?branch=master[Build Status]]
+https://travis-ci.org/pcu-consortium/pcu-consortium.github.io[image:https://travis-ci.org/pcu-consortium/pcu-consortium.github.io.svg?branch=master[Build Status]]
 
 == install
 
