@@ -7,7 +7,9 @@ script: "./script/cibuild"
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GH_TOKEN
+  github_token: "$GITHUB_TOKEN"
+  email: pcu.consortium@gmail.com
+  name: Travis CI
   on:
     branch: gh-pages
 branches:
@@ -16,5 +18,5 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: eeHx2mjtnIR91zHqKlsPxwtiEP5v0BE4JO2G3kSN26qi+09MMV3fBYFce8hLwVRD/gj+PCU5mZ/gsiJf8jL5AUFYyMo4Y0XBJQVwqMd71LCjtEsoPRlBIkiCclV1Ulxg6E7NQ4XT0WJGjy/piMgLyagyem0Yg0oFvd+HgM84Pef8cIh2wu2ptzEzc4vKzdO+4jtvSG0kWHm0uBA1rwIlgaTWNY7KSZCyZ9KtNlwRLN19URGPQu4DupgJyaj2dY2UVnxhREWIy6JLOVnc2UclgKrL5Q+uoAYQOsnj4iZrTuP1MQV+vzbl5xNpI1KMfSsKZEbuiZA4oqGMHBivp8ttuwDE82ZoOxefp5MyzR3GudFJSTzDEcBkrgBKnG/AbxNMJ6BjjzOggalaxnbIdMq3X7jJ0JczrBefW0fOe6WmfyTlRuIzYTFYUs6PadpNfFGw05VxPL/BJnOvEq/VZmjO44pmeT9l7FpoO1pqolqJ5U3hEYjeyKyMlWo0IrFFLwSg80sUgwK1gv5FzQhKYR3OAt3e4FNetsSL7xRbWp9OSSiWs00rnsDVofj71Ekgl0uCEC/s1wDW1tM/F7nhDr7XSrDqBACjEqOrUgErNNwoz+GNC33UvaH5AmsNDk8TtxwkCtcxLThVDz32S9fYN3JxuEg5teGuxVjqU2Q2nl6pvWY=
+  - secure: gVECbd9mTQgMG/HA1PhPY2Dbh1wbLkB+6HlFbwVuoBATDe7rg9zUDa/IKsnMIHrhx2pFz/n0Rj7eQbDvTG9ESy+1rDQTLxRFHU2c6LZsZvZhmuG7kGFw5+ZnMyLjQ7lMOsh85BRLuDvCpp/mHYhrmkXXq7Z8ycVSEhpsG00szWTalDd8Ozmy9KrkmygNATATmM07g2ZIOYOb92IZtfxlo6lAl0+PIDn4iMW0lr8XjBbw1vE+10XEQqDmEfKEfHbss5lmciUYb2FAd6Tg6xMdCIH2o99+LO3gwyCMZsvxk9NAzQJ83CskInXNe8hasZelCBMKIEWSuwi3RNk1QNSOho3UVUvWZ98877wUgoYqHlXlRfqgXXeQN2tsuB6z+yv0Bm1cr+l9+EHIPj7/EFv5lCRXqNgvzJKMeOsVKCFXTFw/7vi2HmI1a+y0lcBGGiiYETR9h2RSt+NBtChj8XYt3fR+r5jU/O7Rdpl2VA3KlvHVTcoVHn4tlfWgI7QTeIJNwrg9W6F/I5fu5HkHyyDmtGLLfYUvKNEnkUQQln2ZYVPFiGxUD0fh0sKpvHXvZwVpDnBfjIT9q/J/1yjmunId0ohhMEY8sk6Q3VRPaTyD0VsHqnWGT/y5ir0AUsgc+PsA7YIQTITvHkc9dmHCD90O7+PWNwdQHgRP+hK7R+iAjrw=
 sudo: false
