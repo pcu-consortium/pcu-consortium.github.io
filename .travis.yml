@@ -10,8 +10,9 @@ deploy:
   github_token: "$GITHUB_TOKEN"
   email: pcu.consortium@gmail.com
   name: Travis CI
+  target_branch: master
   on:
-    branch: master
+    branch: src-pages
 branches:
   only:
   - src-pages
