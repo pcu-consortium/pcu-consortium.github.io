@@ -13,4 +13,4 @@ bundle exec htmlproofer ./_site --disable-external
 #    exit 0
 #fi
 
-bundle exec rake deploy
+#bundle exec rake deploy
