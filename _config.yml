@@ -67,6 +67,5 @@ exclude:
   - README.adoc
   - Gemfile
   - Gemfile.lock
-  - Rakefile
   - .travis.yml
   - vendor

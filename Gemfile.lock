@@ -9,7 +9,6 @@ GEM
     addressable (2.4.0)
     asciidoctor (1.5.5)
     backports (3.8.0)
-    coderay (1.1.1)
     colorator (1.1.0)
     colored (1.2)
     ethon (0.10.1)
@@ -93,9 +92,6 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    rake (10.5.0)
-    rake-jekyll (1.1.0)
-      rake (~> 10.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -123,7 +119,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coderay (~> 1.1.0)
   fastimage
   html-proofer
   jekyll (= 3.3.1)
@@ -133,7 +128,6 @@ DEPENDENCIES
   jekyll-seo-tag (~> 2.2.3)
   jekyll-sitemap (~> 1.1.1)
   nokogiri
-  rake-jekyll (~> 1.1.0)
   travis
 
 RUBY VERSION
