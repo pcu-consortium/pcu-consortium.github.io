@@ -1,0 +1,39 @@
+.one-page {
+  min-height: 760px;
+  display: flex;
+
+  .container-fluid {
+    margin: auto;
+  }
+}
+
+#home-section-overview {
+  background-color: $pcu-color-1;
+  background-image: url("../images/neurons.jpg");
+  background-size: cover;
+  color: $pcu-color-2;
+
+  .overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.66);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+  img {
+   height: 380px;
+   width: 380px;
+   margin: auto;
+  }
+}
+
+#home-section-partners {
+  background-color: #FFF;
+
+  img {
+    max-height: 100px;
+    margin: 20px;
+    max-width: 200px;
+  }
+}

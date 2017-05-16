@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: overview
 title: Overview
 title_extended: PCU overview
-subtitle: Soon...
 ---
 
-COLLECTION.
+COLLECTION

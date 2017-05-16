@@ -1,0 +1,32 @@
+.page-header {
+  margin-bottom: 20px;
+
+  h4 {
+    color: grey;
+    font-style: italic;
+  }
+}
+
+.excerpt{
+  padding: 5px;
+  margin: 5px 0 20px 0;
+  border-left: solid 5px $pcu-color-2;
+  border-radius: 3px;
+  display: inline-flex;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+.section-pages-collections {
+  article {
+    min-height: 400px;
+    border-bottom: 1px solid $pcu-color-2;
+  }
+}
+
+#community-article-consortium {
+  img {
+    max-height: 50px;
+    max-width: 100px;
+  }
+}
