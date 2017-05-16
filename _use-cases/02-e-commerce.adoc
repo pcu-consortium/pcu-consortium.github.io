@@ -1,0 +1,16 @@
+---
+title: E-Commerce
+excerpt: Give the best search capabilities and recommendation engine to your customers
+---
+
+== icon:shopping-cart[] Connect from your e-commerce platform
+
+PCU enable you to connect to your Magento website.
+
+== icon:external-link[] Enrich and classify your products
+
+PCU let you create or suggest new categories, facets or query expansions based on onthologies, user queries, and click stream.
+
+== icon:users[] Recommendation and personnalization
+
+PCU can adapt the search results based on marketing rules and on customer profile and cart history.

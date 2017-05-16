@@ -1,0 +1,16 @@
+---
+title: Customer Insight
+excerpt: Learn who are your customer and what they want and neeed.
+---
+
+== icon:shopping-cart[] Collect your customer data
+
+PCU can collecte your CRM, e-commerce, mails customers data
+
+== icon:user-circle-o[] Behaviour analysis
+
+PCU detect customer interest, product opinions and departure risk.
+
+== icon:dot-circle-o[] Customer 360 view
+
+PCU offer a customer 360 view of relations between your company and him.

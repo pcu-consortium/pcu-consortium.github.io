@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign col = site.collections | where:'label', page.collectionName | first %}
+{% for subpage in col.docs %}
+<section id="{{ page.title|slugify }}-slide-{{ subpage.title|slugify }}"
+class="{{ page.title|slugify }}-slide one-page">
+  <div class="container">
+    <div class="row">
+      <div class="hiden-xs col-md-4 col-lg-4 text-center">
+      </div>
+      <div class="cl-xs-12 col-md-8 col-lg-8 overlay">
+          <h1>{{ subpage.title }}</h1>
+          <h4>{{ subpage.excerpt }}</h4>
+          {{ subpage.content }}
+      </div>
+      <div class="clearfix visible-xs-block"></div>
+    </div>
+  </div>
+</section>
+{% endfor %}

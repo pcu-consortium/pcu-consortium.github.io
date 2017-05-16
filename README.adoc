@@ -16,7 +16,7 @@ to check syntax before commit execute `./script/cibuild`
 Read the documentation on :
 
 * Jekyll there : https://jekyllrb.com/
-* Kramdown syntaxe there : https://kramdown.gettalong.org/quickref.html
+* Asciidoc syntaxe there : http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 
 == Assets used
 
@@ -24,7 +24,7 @@ All foreign assets used in this website are open source:
 
 * http://getbootstrap.com (MIT)
 * https://github.com/google/roboto (Apache 2.0)
-* http://fontawesome.io/ (SIL Open Font License)
+* http://fontawesome.io (SIL Open Font License)
 * http://glyphicons.com (Creative Commons)
 * http://iconsdb.com (Creative Commons)
-* https://pixabay.com/fr/neurones-cellules-du-cerveau-1773922/ (Creative Commons)
+* https://pixabay.com (Creative Commons)

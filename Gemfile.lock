@@ -92,6 +92,8 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
+    pygments.rb (1.1.2)
+      multi_json (>= 1.0.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
@@ -128,6 +130,7 @@ DEPENDENCIES
   jekyll-seo-tag (~> 2.2.3)
   jekyll-sitemap (~> 1.1.1)
   nokogiri
+  pygments.rb (~> 1.1.2)
   travis
 
 RUBY VERSION

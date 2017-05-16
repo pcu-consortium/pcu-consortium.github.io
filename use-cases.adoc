@@ -1,8 +1,8 @@
 ---
-layout: page-collection
+layout: slide-collection
 title: Use Cases
 title_extended: PCU use cases
-subtitle: 
+subtitle:
 collectionName: use-cases
 ---
 

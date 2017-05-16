@@ -1,0 +1,19 @@
+---
+title: Enterprise Search
+excerpt: Search in all your enterprise data store, application and feeds
+---
+
+== icon:plug[] Connect from everywhere
+
+PCU bring to you multi-source collector agents that you can install everywhere in your enterprise network with low footprint.
+Agents embed connectors for your favorite tools and if one is missing you can make your own from PCU connector SDK.
+
+== icon:anchor[] Enrich and classify your data
+
+PCU manage ontology and can clusterize automatically your data from default embeded algorithms or let you bring your owns.
+
+
+== icon:search[] Unify secured search
+
+PCU offer a unique search portal to search across all your data sources. You can also integrate PCU in your own web application with it's toolbar and query API.
+PCU secure your data by importing your data permission at document level and let you define your own query and documents rules.

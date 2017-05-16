@@ -26,9 +26,9 @@
               <nav>
                 <h6>Use Cases</h6>
                 <ul class="list-unstyled">
-                  <li><a href="#">Enterprise Search</a></li>
-                  <li><a href="#">E-commerce</a></li>
-                  <li><a href="#">Customer Insights</a></li>
+                  {% for slide in site.use-cases %}
+                  <li><a href="#">{{ slide.title }}</a></li>
+                  {% endfor %}
                 </ul>
               </nav>
             </div>

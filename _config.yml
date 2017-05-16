@@ -1,7 +1,9 @@
 #general
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pcu-consortium.github.io" # the base hostname & protocol for your site
-permalink: /blog/:year/:title/
+permalink: /news/:year/:title/
+paginate: 5
+paginate_path: "/news/:num/"
 lang: fr_FR
 jekyll-mentions:
   base_url: https://twitter.com
@@ -48,10 +50,15 @@ aboutNav:
 #collections
 collections:
 - community
+- use-cases
 
 # Build settings
 markdown: kramdown
-asciidoc: {}
+asciidoc:
+  attributes:
+    source-highlighter: pygments
+    pygments-css: class
+    pygments-stylesheet: asciidoc-pygments.css
 asciidoctor:
   attributes:
     - icons=font

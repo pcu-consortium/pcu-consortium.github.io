@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: news
 title: News
 title_extended: PCU news
-subtitle: Soon...
 ---
-
-COLLECTION
+ POSTS

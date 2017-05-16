@@ -1,0 +1,35 @@
+.overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.90);
+}
+
+.use-cases-slide{
+  color: $pcu-color-0;
+
+  h1 {
+    color: $pcu-color-2;
+  }
+
+  h4 {
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+}
+
+#use-cases-slide-enterprise-search{
+  background-color: $pcu-color-1;
+  background-image: url("../images/enterprise.jpg");
+  background-size: cover;
+}
+
+#use-cases-slide-e-commerce{
+  background-color: $pcu-color-1;
+  background-image: url("../images/store.jpg");
+  background-size: cover;
+}
+
+#use-cases-slide-customer-insight{
+  background-color: $pcu-color-1;
+  background-image: url("../images/customer-insight.jpg");
+  background-size: cover;
+}

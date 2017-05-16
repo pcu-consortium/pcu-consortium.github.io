@@ -1,8 +1,8 @@
 .one-page {
-  min-height: 760px;
+  min-height: 750px;
   display: flex;
 
-  .container-fluid {
+  .container-fluid, .container {
     margin: auto;
   }
 }
