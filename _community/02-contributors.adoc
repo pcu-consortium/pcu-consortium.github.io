@@ -6,7 +6,7 @@ excerpt: PCU is a three-year long collaborative project started in November, 201
 |===
 | Name                 | Company         | Title                |
 
-| Fatmah CHAMEKH       | ESILV           | Professor            |
+| Fatmah CHAMEKH       | ESILV           | Post doc             |
 | Jocelyn COULMANCE    | Proxem          | CTO                  |
 | Vincent DURANT       | Wallix          | Services BU Director |
 | Badr CHENTOUF        | Smile           | Managing Director    |

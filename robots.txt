@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: sitemap.xml
+Sitemap: http://pcu-consortium.github.io/sitemap.xml
