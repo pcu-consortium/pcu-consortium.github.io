@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "PCU@RISE 2017 A thesaurus for ecommerce search - slides available"
+date:   2017-07-07 16:00:00 +0200
+categories: event, news, report
+---
+
+Slides of the "Building a thesaurus for product search in ecommerce" given at the https://sites.google.com/site/frenchsemanticir/home/rise_2017[RISE 2017] conference in Caen
+have been uploaded to https://www.slideshare.net/pcuconsortium[Slideshare]:
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wZaAMCx8GdpMMs" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/pcuconsortium/pcurise-2017-building-a-thesaurus-for-product-search-77582961" title="PCU@RISE 2017 - Building a thesaurus for product search" target="_blank">PCU@RISE 2017 - Building a thesaurus for product search</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/pcuconsortium">PCU Consortium</a></strong> </div>
+++++
+
+Check it out to find out about how http://www.smile.fr[Smile] dreams up a Machine Learning-enabled future
+for ecommerce and its Magento Elastic Suite searchandising solution.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/GroupeSmile">@GroupeSmile</a> dreams up a <a href="https://twitter.com/hashtag/MachineLearning?src=hash">#MachineLearning</a> future for ecommerce and <a href="https://twitter.com/hashtag/Magento?src=hash">#Magento</a> <a href="https://twitter.com/hashtag/Elastic?src=hash">#Elastic</a> at <a href="https://twitter.com/hashtag/IC?src=hash">#IC</a> <a href="https://twitter.com/hashtag/RISE?src=hash">#RISE</a> <a href="https://twitter.com/lab_smile">@lab_smile</a> <a href="https://t.co/tBhzLRPdv9">https://t.co/tBhzLRPdv9</a> <a href="https://t.co/a6eU0hyUlb">pic.twitter.com/a6eU0hyUlb</a></p>&mdash; Marc Dutoo (@marcdutoo) <a href="https://twitter.com/marcdutoo/status/883272621021966336">July 7, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+Congratulations to PCU partner http://lipn.univ-paris13.fr/en/[LIPN]'s Haïfa Zargayouna for having put together
+once again one of the leading research events about semantic search ! And a very good opportunity to organize collaboration
+in the PCU project with colleague Guillaume Santini and ESILV's Fatma Chamekh.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/PCUConsortium">@PCUConsortium</a> meeting is in <a href="https://twitter.com/hashtag/IC?src=hash">#IC</a> <a href="https://twitter.com/hashtag/RISE?src=hash">#RISE</a>. Guys!!! 🤣🤣 <a href="https://t.co/Uj72V6p5Ij">pic.twitter.com/Uj72V6p5Ij</a></p>&mdash; PCU Consortium (@PCUConsortium) <a href="https://twitter.com/PCUConsortium/status/882934039895846914">July 6, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
