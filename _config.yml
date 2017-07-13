@@ -8,6 +8,13 @@ lang: fr_FR
 jekyll-mentions:
   base_url: https://twitter.com
 
+#tags
+tag_page_layout: news
+tag_page_dir: tag
+tag_permalink_style: pretty
+tag_page_data:
+  sitemap: false
+
 # seo
 title: PCU
 email: pcu-drive@googlegroups.com
@@ -53,13 +60,13 @@ collections:
 - use-cases
 
 # Build settings
-markdown: kramdown
 asciidoc:
   attributes:
     source-highlighter: pygments
     pygments-css: class
     pygments-stylesheet: asciidoc-pygments.css
 asciidoctor:
+  safe: unsafe
   attributes:
     - icons=font
 timezone: Europe/Paris

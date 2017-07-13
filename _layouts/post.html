@@ -1,5 +1,29 @@
 ---
 layout: default
 ---
-
-{{content}}
+<section id="post">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+        <article id="post-{{ page.title|slugify }}">
+          <header>
+            <h1 itemprop="name headline">{{ page.title }}</h1>
+            {% for tag in page.tags %}
+            <a href="/tag/{{tag}}/"><span class="label label-primary">{{tag}}</span></a>
+            {% endfor %}
+            <span class="date">{{ page.date | date: "%d/%m/%Y" }}</span> by <span class="author">{{ page.author }}</span>
+            {% include share-panel.html %}
+          </header>
+          <main class="text-justify" itemprop="articleBody">
+            <div class="excerpt">
+              <p>{{ page.excerpt }}</p>
+            </div>
+            <div class="section">
+              {{ content }}
+            </div>
+          </main>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

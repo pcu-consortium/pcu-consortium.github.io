@@ -4,49 +4,78 @@ layout: default
 <section id="news-summary">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <h1>News</h1>
-      </div>
-      {% for post in site.posts %}
-      <div class="col-lg-12">
-        <article class="news">
-          <header>
-            <h3>{{ post.title }}</h3>
-            <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
-          </header>
-          <main>
-            {{ post.content }}
-          </main>
-        </article>
-      </div>
-      {% endfor %}
-      <!-- Pagination links -->
-      <div class="col-lg-12 pagination">
-        {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+      <div class="col-md-9 col-lg-9">
+        <header>
+          <h1>News {% if page.tag %}: {{ page.tag }}{% endif %}</h1>
+        </header>
+        {% if page.tag %}
+          {% assign listPages = page.posts %}
           {% else %}
-            <span>&laquo; Prev</span>
-          {% endif %}
-
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <em>{{ page }}</em>
-            {% elsif page == 1 %}
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-            {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-          {% endfor %}
-
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-          {% else %}
-            <span>Next &raquo;</span>
-          {% endif %}
-        </div>
+          {% assign listPages = paginator.posts %}
         {% endif %}
+        {% for post in listPages %}
+          <article class="news">
+            <header>
+              <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+              <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+              {% for tag in post.tags %}
+              <a href="/tag/{{tag}}/"><span class="label label-info">{{tag}}</span></a>
+              {% endfor %}
+            </header>
+            <main>
+              <a href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.excerpt }}
+              </a>
+            </main>
+          </article>
+        {% endfor %}
+        <!-- Pagination links -->
+        {% unless page.tag %}
+        {% if paginator.total_pages > 1 %}
+        <nav class="center" aria-label="News pages">
+          <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li>
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">&laquo; Prev</a>
+            </li>
+            {% else %}
+            <li class="disabled"><a href="#">&laquo; Prev</a></li>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <li class="active"><a href="#">{{ page }}</a></li>
+              {% elsif page == 1 %}
+                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+              {% else %}
+                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+            <li>
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+            </li>
+            {% else %}
+            <li class="disabled"><a href="#">Next &raquo;</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+        {% endif %}
+        {% endunless %}
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <aside class="cardboard">
+          <div>
+            <h4>Tags</h4>
+            <div id="cloud">
+              {{ site | tag_cloud }}
+            </div>
+          </div>
+          <div>
+            <a class="twitter-timeline" data-height="900" href="https://twitter.com/{{site.twitter_username}}">Tweets de @{{site.twitter_username}}</a>
+          </div>
+        <aside>
       </div>
     </div>
   </div>

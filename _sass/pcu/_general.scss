@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 #mainNav {
   .navbar-brand {
     float: none;
@@ -121,4 +125,21 @@ footer {
 
 .default-circle-point {
   @include circle-point(150px, 64px);
+}
+
+.share-panel {
+    text-align: right;
+    padding: 20px;
+
+    & > div,
+    & > iframe,
+    & > span.IN-widget {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px !important;
+
+        &.fb-share-button span {
+            vertical-align: initial !important;
+        }
+    }
 }

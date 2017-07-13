@@ -1,5 +1,5 @@
 article.news {
-  background-color: #FFF;
+  background-color: $pcu-color;
   padding: 20px;
   border-bottom: 1px solid $pcu-color-2;
 
@@ -15,4 +15,90 @@ article.news {
 .pagination {
   color: $pcu-color-2;
   text-align: center;
+}
+
+.cardboard{
+      margin-top: 50px;
+  & > div{
+    background-color: $pcu-color;
+    margin: 10px 0;
+    padding: 2px;
+  }
+
+  h4 {
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+#cloud {
+  padding: 2px;
+  background-color: lighten($pcu-color-2, 30%);
+
+  a {
+    padding: 5px;
+
+    color: $pcu-color-1;
+    display: block;
+
+    &.set-1 {
+      font-size: 0.9em;
+      font-weight: 100;
+    }
+
+    &.set-2 {
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    &.set-3 {
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+
+    &.set-4 {
+      font-size: 1.8em;
+      font-weight: 700;
+    }
+
+    &.set-5 {
+      font-size: 2.0em;
+      font-weight: 900;
+    }
+  }
+}
+
+#post{
+  article {
+    background: $pcu-color;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    //background: $pcu-color-2;
+  }
+
+  header {
+    font-size: 12px;
+
+    .date, .author {
+      font-weight: bold;
+    }
+  }
+
+  main {
+    color: #000;
+  }
+
+  .media, .jekyll-twitter-plugin {
+      text-align: center;
+
+      * {
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
 }
