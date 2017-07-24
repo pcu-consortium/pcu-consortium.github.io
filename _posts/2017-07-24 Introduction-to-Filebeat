@@ -1,0 +1,61 @@
+---
+liquid: true
+layout: post
+title:  "How to use Filebeat to send data to Logstash or Elasticsearch"
+date:   2017-07-21 16:00:00 +0200
+author: Thomas Estrabaud
+tags: Filebeat Logstash ElasticSearch ELK data pipeline
+excerpt: Introduction to Filebeat on how to send data to Logstash or ElasticSearch
+---
+
+= https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html[Introduction to Filebeat]
+
+Filebeat is a very light tool to fetch data from a filesystem to send it to other tools like logstash, elastic, kafka or redis.
+
+*Note :* Filebeat is the only tool from elastic to have his configuration in yml, the other are using JSON.
+
+Filebeat use a system of prospectors to be able to have different configurations in the same instance.
+
+So first we define the field filebeat.prospectors which is a list in yml so :
+
+----
+filebeat.prospectors:
+   -
+   -
+  [...]
+----
+
+We have two options to read data. You can either read from the console of from files with
+----
+input_type: log
+paths:
+  - /pathToData/*.log
+  - /pathToData2/*.txt
+----
+
+You can send this data to one or multiple output like these (a lot of the settings are by default)
+
+* Logstash:
+----
+output.logstash:
+   hosts: ["localhost:5043"]
+----
+
+* ElasticSearch
+----
+output.elasticsearch:
+  hosts: ["192.168.1.42:9200"]
+----
+
+So for a really simple configuration file who will read only one file and sent it only to logstash we can have :
+----
+filebeat.prospectors:
+   - input_type: log
+     paths:
+        - /pathToData/*.log
+output.logstash:
+   hosts: ["localhost:5043"]
+----
+
+*Note :* There is a lot of default configuration that can be seen in the file ```filebeat.full.yml``` and overwrited in you own configuration files.
+
