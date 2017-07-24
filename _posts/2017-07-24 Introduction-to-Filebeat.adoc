@@ -1,11 +1,11 @@
 ---
 liquid: true
 layout: post
-title:  "How to use Filebeat to send data to Logstash or Elasticsearch"
+title:  "Introduction to Filebeat"
 date:   2017-07-21 16:00:00 +0200
 author: Thomas Estrabaud
 tags: Filebeat Logstash ElasticSearch ELK data pipeline
-excerpt: Introduction to Filebeat on how to send data to Logstash or ElasticSearch
+excerpt: Introduction to Filebeat on how to send data 
 ---
 
 = https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html[Introduction to Filebeat]
