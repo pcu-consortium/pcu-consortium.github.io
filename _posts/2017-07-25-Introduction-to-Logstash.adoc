@@ -1,0 +1,160 @@
+---
+liquid: true
+layout: post
+title:  "Introduction to Logstash"
+date:   2017-07-25 15:00:00 +0200
+author: Thomas Estrabaud
+tags: Filebeat Logstash ElasticSearch ELK data pipeline
+excerpt: Introduction to Logstash on how to get and send data
+---
+
+== Logstash presentation
+
+https://www.google.fr/search?client=ubuntu&channel=fs&q=doc+logstash&ie=utf-8&oe=utf-8&gfe_rd=cr&ei=2vt2WfCnOujUXq75raAP[(Link to the official documentation)]
+
+Logstash is a tool to fetch data from a source and send it to a destination while doing some transformation on it on the fly. It has been specially designed and used to send data to ElasticSearch.
+
+It is able to take multiple entries and output at a time and can make use of conditionals to treat data differently based on criteria and conditionals.
+
+It uses a configuration file in a slighty modified JSON (described below).
+
+== Logstash configuration
+
+The Logstash configuration is separated in 3 parts :
+
+* Input
+* Filter
+* Output
+
+NOTE: Each part can be in a different file (in the same folder) and we only need to give the folder to Logstash (it will concatenate the different files).
+
+=== Input
+
+The different inputs are in the field ```input``` and you can put more than one in it.
+
+There is a list of different https://www.elastic.co/guide/en/logstash/current/input-plugins.html[input plugins] and we will see a few of them here.
+
+NOTE: A lot of fields are set by default and are fine like that for a simple utilisation. For more parameters do check the link above.
+
+==== Read a file on a local file system
+
+----
+input {
+  file {
+    start_position => "beginning"
+    sincedb_path => "/pathToSincedb/sincedb"
+    path => "/pathToYourData/*"
+  }
+}
+----
+
+[underline]#What does it do ?#
+
+This will read all the files that are in the folder ```pathToYourData``` since the beginning of the file line by line.
+
+The ```sincedb_path => "/pathToSincedb/sincedb"``` let you set the path of the sincedb file that save which file you have already read and to where. So if your file has been updated the modification are taken  into account by Logstash.
+
+WARNING: Logstash will ignore files that haven't been modified for more than 24 hours. A little ```touch myFile``` will resolve this problem
+
+==== Read data from Kafka
+
+----
+input {
+  kafka{
+    topic => ["myTopic1", "myTopic2"]
+    auto_offset_reset => "earliest"
+    bootstrap_servers => ["localhost:9092", "localhost:9093"]
+  }
+}
+----
+
+[underline]#What does it do ?#
+
+This configuration will make Logstash consume on the topics ```myTopic1``` and ```myTopic2``` from the last offset commited or the earliest message if there is no offest (with the field ```auto_offset_reset```) on the IPs ```localhost:9092``` and ```localhost:9093```
+
+==== Read data from ElasticSearch
+
+It is particulary imporant to be able to read from ElasticSearch for reindexing or simply get the data to put it elsewhere.
+
+----
+input {
+  elasticsearch {
+    hosts => ["localhost"]
+    index => "myIndex"
+    query => "*"
+  }
+}
+----
+
+[underline]#What does it do ?#
+
+This is one of the simplest configuration that will take all the data from the ```myIndex``` mapping.
+
+==== Read data from Filebeat
+
+----
+input {
+  beats {
+    port => "5044"
+  }
+}
+----
+
+[underline]#What does it do ?#
+
+With this configuration, Logstash will listen to the port 5044 where Filebeat is supposed to send data.
+
+==== Read data from multiple input
+
+If we want to have multiple output we only have to put them in the input field one after another.
+
+----
+input {
+  file {
+    start_position => "beginning"
+    sincedb_path => "/pathToSincedb/sincedb"
+    path => "/pathToYourData/*"
+  }
+  kafka {
+    topic => ["myTopic1", "myTopic2"]
+    auto_offset_reset => "earliest"
+    bootstrap_servers => ["localhost:9092", "localhost:9093"]
+  }
+  elasticsearch {
+    hosts => ["localhost"]
+    index => "myIndex"
+    query => "*"
+  }
+  beats {
+    port => "5044"
+  }
+}
+----
+
+==== Determine the origin of data
+
+If you have multiple output you won't know in the filter and output where you data come from as you don't have a notion of pipeline in logstash. To keep this information you have to put a tag in the ```input``` like below.
+
+----
+input {
+  file {
+    tags => "FILE"
+    start_position => "beginning"
+    sincedb_path => "/pathToSincedb/sincedb"
+    path => "/pathToYourData/*"
+  }
+  kafka {
+    tags => "KAFKA"
+    topic => ["myTopic1", "myTopic2"]
+    auto_offset_reset => "earliest"
+    bootstrap_servers => ["localhost:9092", "localhost:9093"]
+  }
+}
+----
+
+With that, in the ```filter``` and ```output``` we will only have to test the tag and know where our data come from.
+
+=== Filter
+
+
+WORK IN PROGRESS - COME BACK LATER FOR SOME MORE AMAZING CONTENT !
