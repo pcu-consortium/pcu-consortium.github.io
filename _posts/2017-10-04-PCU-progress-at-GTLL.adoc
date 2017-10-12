@@ -1,0 +1,28 @@
+---
+liquid: true
+layout: post
+title:  "Simple Spark-based indexing and more PCU progress at Paris' Open Source innovation cluster"
+date:   2017-10-11 16:00:00 +0200
+author: Marc DUTOO
+tags: event
+excerpt: Last Wednesday's plenary meeting of the Open Source Paris innovation cluster (System@tic GTLL) wasn't like any other. Indeed, this was it's 10th birthday.
+---
+
+Last Wednesday's https://systematic-paris-region.org/evenements/pleniere-gt-logiciel-libre/[plenary meeting of the Open Source Paris innovation cluster] (System@tic GTLL) wasn't like any other.
+Indeed, this was it's 10th birthday. How can I say it ? It was like having its cake and eating it - literally, and a very good chocolate cake at that.
+
+There I had the pleasure of giving a quick report on the PCU project's progress in its first year. This was the opportunity to unveil its new tagline : *Unified, search-first Machine Learning platform targeted at business applications*. That's the vision of PCU : bring your app and we'll make it smart. And starting with smart search - we think almost every app can get benefits out of smart search.
+
+I also couldn't resist hinting at its https://github.com/pcu-consortium/poc-inAndOutSpark[innovative YAML-configured ETL on Spark]. More could be said about this : that it brings Spark's data transformation and modeling power to masses, that it also works in streaming mode (including https://github.com/pcu-consortium/poc-inAndOutSpark/blob/master/src/main/java/streaming/EsForeachWriter.java[directly to ElasticSearch] - would that be a world first ?), that all that makes it very appropriate as PCU's data ingestion and indexing pipeline. But it's still a prototype, and there'll soon be better times and places to delve into it - hint, hint.
+
+Anyway, the slides shown at the meeting have been uploaded to https://www.slideshare.net/pcuconsortium[Slideshare], here they are :
+
+++++
+{% slideshare {"id": "iSRQ7cYu9jW1Nb" } %}
+++++
+
+Obviously, the meeting didn't end there. As usual, there were plenty of mind-opening innovative ideas showcased. For instance, https://github.com/Wolphin-project[Wolphin] lead by https://twitter.com/jonascript[Jonathan Rivalan] of AlterWay, which aims to offer smart monitoring for Docker Swarm (would that make it "swarmt" ?!). Or Karima Rafes' Bordercloud clever use of Linked Data to http://www.bordercloud.com/LinkedWikiPlatform.php[organize the data scientist's work environement].
+
+And unsurprisingly, the final networking session confirmed that the people behind those ideas are necessarily very, very interesting. So, very happy to have met for the first time Laurent, Fabrice, Didier. And thanks for your nice feedback about PCU. Again, people, bring us your application, we'll make it smart !
+
+image:/assets/images/posts/20171004_gtll_networking.jpg[Birthday cake time at GTLL]
