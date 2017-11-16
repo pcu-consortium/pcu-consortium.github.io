@@ -1,0 +1,137 @@
+---
+liquid: true
+layout: post
+title:  "A View On Cloud Storage Services"
+date:   2017-11-01 10:00:00 +0200
+author: Emmanuel Keller
+tags: Cloud Storage Protocols
+excerpt: A view on Cloud Storage Services and related protocols
+---
+
+The goal of this paper is to identify the common storage concerns in a cloud environment.
+
+By listing the major Cloud storage services and the used protocols, we expect to have an idea of which type of connectors which should provide.
+
+== Cloud Storage Services list
+
+[%header,cols=4*]
+|===
+|Name
+|Vendor
+|Description
+|Supported protocols
+
+|https://www.swiftstack.com/[SwiftStack Hybrid Cloud Storage]
+|SwiftStack
+|San Francisco-based developer of a commercial version of the open-source Swift object storage technology.
+|NFS, SMB, Swift, S3
+
+|https://aws.amazon.com/efs/[AWS Elastic File System]
+|Amazon
+|Amazon EFS is a new, fully managed service for setting up and scaling file storage in the AWS Cloud.
+|NFS, On premise connection (AWS Direct Connect)
+
+|https://aws.amazon.com/s3/[Amazon S3]
+|Amazon AWS
+|Provides storage through web services interfaces. Designed as a complete storage platform.
+|S3 API, Local file server (AWS Storage gateway)
+
+|https://aws.amazon.com/glacier/[Amazon Glacier]
+|Amazon AWS
+|A secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.
+|Proprietary API
+
+|https://azure.microsoft.com/en-us/services/storage/[Azur Secure Cloud Storage]
+|Microsoft
+|Cloud service that provides storage that is highly available, secure, durable, scalable, and redundant. Azure Storage consists of Blob storage, File Storage, and Queue storage. Learn how to leverage Azure Storage in your applications with our quickstarts and tutorials.
+|Developer SDK, REST API
+
+|http://www.ctera.com/technology/platform/[Ctera Enterprise File Services Platform]
+|Ctera, USA
+|File sync and share services that encourage user adoption while ensuring total governance over all methods of data access and storage – any device, any service, any location.
+|Proprietary Sync Agent
+
+|https://cloud.oracle.com/storage-classic[Oracle Cloud Infrastructure Object Storage Service]
+|Oracle
+|Enterprise-proven object storage and archive services for cloud-based data storage, sharing, and protection. Secure, resilient, elastic, and simple to use so that data is available when user need it from any environment connected to the Internet.
+|Swift REST API, Java client
+
+|https://docs.openstack.org/security-guide/object-storage.html[OpenStack Object Storage]
+|OpenStack
+|OpenStack Object Storage (swift) service provides software that stores and retrieves data over HTTP. Objects (blobs of data) are stored in an organizational hierarchy that offers anonymous read-only access, ACL defined access, or even temporary access.
+|Swift, NFS, CIFS, GlusterFS, HDFS
+
+|https://www.rackspace.com/cloud/files[Rackspace Scalable Cloud Object Storage]
+|Rackspace
+|Cloud Files provides online object storage for files and media, delivering them globally at blazing speeds over a worldwide content delivery network (CDN)
+|Swift, NFS, Client API
+
+|https://www.emc.com/storage/atmos/atmos.htm[Dell/EMC Elastic Cloud Storage]
+|Dell/EMC
+|ECS brings all the benefits of a public cloud to your own datacenter while keeping its cost under control. It can be used for a wide variety of workloads such as deep archive, geo protection of Hadoop, Internet of Things.
+|HDFS, Object storage API
+
+|https://cloud.google.com/storage/[Google Cloud Storage]
+|Google
+|A unified offering across the availability spectrum: from live data tapped by today’s most demanding applications, to cloud archival solutions Nearline and Coldline. Featuring a consistent API, latency, and speed across storage classes.
+|Client API & libraries, Amazon S3
+
+|https://www.commvault.com/solutions/by-topic/cloud-data-management[Commvault Cloud DataManagement]
+|Commvault
+|Back up your databases, files, applications, endpoints and VMs with maximum efficiency according to data type and recovery profile. Integrate hardware snapshots. Optimize storage with deduplication.
+|Proprietary Agent and API
+
+|https://www.egnyte.com[Egnyte Secure File Sharing]
+|Egnyte
+|Egnyte Connect delivers Enterprise File Sync and share (EFSS), designed with businesses in mind, so IT can focus on security & performance, while users can access all their content from their desktop, mobile and browser
+|Proprietary Clients (Desktop, mobile, web)
+
+|https://www.box.com[Box Drive]
+|Box
+|Create, edit and review documents with others in real time from anywhere, on any device.
+|Proprietary Clients, API & SDK
+
+|https://www.dropbox.com[DropBox]
+|Dropbox
+|Dropbox creates a special folder on the user's computer, the contents of which are then synchronized to Dropbox's servers and to other computers and devices that the user has installed Dropbox on, keeping the same files up-to-date on all devices.
+|Proprietary Clients, API & SDK
+|===
+
+== Crawling use cases
+
+=== File System (sync or file server)
+
+In this case, the vendor solution will expose the files in a local computer (desktop, server). using one of the two following methods:
+
+- A synchronization agent: This local daemon manages to synchronize the files in a local location.
+- Using a file sharing service: The files are served using a common file protocol (NFS, CIFS).
+
+The crawling process is done by browsing the directories using the standard file crawler.
+
+Who ? Dropbox, Box, GoogleDrive, Microsoft OneDrive, OwnCloud, ...
+
+=== Object storage
+
+The files are exposed by a documented API. Some vendors may provide client implementations.
+The API can be standard (S3, SWIFT, HDFS) or proprietary.
+
+The crawling process only differ from the standard file crawler by calling an API to list the files and collect the content.
+
+Who ? Rackspace, OpenStack, AmazonS3, ...
+
+=== Backup & vault storage
+
+This kind of storage provides really specific API. First, the files are not directly visible. What is exposed first are backup entities (archives).
+
+Most of the time, the access to the files is a slow (and complex) process.
+
+The crawling of those archives may be useful to index old data. However, it would probably more interesting to crawl the files before they enter the vault.
+    
+The files are exposed
+[bibliography]
+== References
+
+- https://en.wikipedia.org/wiki/Comparison_of_file_hosting_services[Comparison of File Hosting Services]: Wikipedia, 2017.
+- https://www.pcmag.com/roundup/306323/the-best-cloud-storage-providers-and-file-syncing-services[The Best Cloud Storage and File-Sharing Services of 2017], PCMag, 2017.
+- http://www.crn.com/slide-shows/cloud/300081410/the-10-coolest-enterprise-cloud-storage-offerings-in-2016-so-far.htm[The 10 Coolest Enterprise Cloud Storage Offerings In 2016] :
+  By Joseph F. Kovar. TheChannelCo. 2016.

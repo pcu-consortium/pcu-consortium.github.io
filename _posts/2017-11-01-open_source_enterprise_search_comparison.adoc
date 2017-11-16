@@ -1,0 +1,9 @@
+---
+liquid: true
+layout: post
+title:  "Open Source Enterprise Search Comparison"
+date:   2017-11-01 10:00:00 +0200
+author: Emmanuel Keller
+tags: entreprise-search search open-source
+excerpt: Open Source Enterprise Search Comparison
+---
