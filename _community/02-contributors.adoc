@@ -9,18 +9,21 @@ excerpt: PCU is a three-year long collaborative project started in November, 201
 | Fatmah CHAMEKH       | ESILV           | Post doc             |
 | Jocelyn COULMANCE    | Proxem          | CTO                  |
 | Vincent DURANT       | Wallix          | Services BU Director |
+| Thierry CHARNOIS     | LIPN            | Senior lecturer      |
 | Badr CHENTOUF        | Smile           | Managing Director    |
 | Marc DUTOO           | Smile           | PCU Project Leader   |
 | Thomas ESTRABAUD     | Smile           | Engineer             |
 | Gregory EVE          | Smile           | Architect            |
 | Marie HAIKEL-ELSABEH | ESILV           | R&D Project Manager  |
 | Florent JOTTREAU     | Armadillo       | R&D Project Manager  |
+| Rushed KANAWATI      | LIPN            | Lecturer             |
 | Emmanuel KELLER      | Wallix          | CTO Qwazr            |
 | Jean ROHMER          | ESILV           | Vice-President       |
-| Guillaume SANTINI    | LIPN            | Senior lecturer      |
+| Guillaume SANTINI    | LIPN            | Lecturer             |
 | Rania SOUSSI         | Armadillo       | R&D Project Manager  |
 | Benoît VAUGON        | Armadillo       | R&D Engineer         |
 | Haifa ZARGAYOUNA     | LIPN            | Lecturer             |
+| Stella ZEVIO         | LIPN            | Phd.                 |
 |===
 
 == How to contribute
