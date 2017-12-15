@@ -8,7 +8,7 @@ tags: event
 excerpt: Slides of the "Building a thesaurus for product search in ecommerce" at RISE 2017 conference in Caen are available
 ---
 
-Slides of the "Building a thesaurus for product search in ecommerce" given at the https://sites.google.com/site/frenchsemanticir/home/rise_2017[RISE 2017] conference in Caen
+Slides of the "Building a thesaurus for product search in ecommerce" talk given at the https://sites.google.com/site/frenchsemanticir/home/rise_2017[RISE 2017] conference in Caen
 have been uploaded to https://www.slideshare.net/pcuconsortium[Slideshare]:
 
 ++++
