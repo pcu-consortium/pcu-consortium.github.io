@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>Introduction to Filebeat | PCU</title>
+<meta property="og:title" content="Introduction to Filebeat">
+<meta name="author" content="Thomas Estrabaud">
+<meta property="og:locale" content="fr_FR">
+<meta name="description" content="Introduction to Filebeat on how to send data">
+<meta property="og:description" content="Introduction to Filebeat on how to send data">
+<link rel="canonical" href="http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/">
+<meta property="og:url" content="http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/">
+<meta property="og:site_name" content="PCU">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-07-24T12:00:00+02:00">
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"Introduction to Filebeat","author":{"@type":"Person","name":"Thomas Estrabaud"},"datePublished":"2017-07-24T12:00:00+02:00","dateModified":"2017-07-24T12:00:00+02:00","description":"Introduction to Filebeat on how to send data","mainEntityOfPage":{"@type":"WebPage","@id":"http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/"},"url":"http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!--link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png" /-->
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PCU">
+  <!--link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" /-->
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <!--meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png" /-->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <link rel="author" href="/humans.txt">
+
+  <!-- self hosted CSS frameworks -->
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <link rel="canonical" href="http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/">
+  <link rel="alternate" type="application/rss+xml" title="PCU" href="http://pcu-consortium.github.io/feed.xml">
+</head>
+
+  <body id="">
+    <div class="">
+      <header>
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/">
+              <img alt="PCU logo" src="/assets/images/logo-no-bg.png" height="50">
+              <span class="navbar-brand">PCU</span>
+            </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="main-navbar">
+              <ul class="nav navbar-nav navbar-right">
+                
+                  <li>
+                      <a href="/overview">Overview</a>
+                  </li>
+                
+                  <li>
+                      <a href="/use-cases">Use Cases</a>
+                  </li>
+                
+                  <li>
+                      <a href="/resources">Resources</a>
+                  </li>
+                
+                  <li>
+                      <a href="/news">News</a>
+                  </li>
+                
+                  <li>
+                      <a href="/community">Community</a>
+                  </li>
+                
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+
+
+      <main id="main-content">
+        <section id="post">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+        <article id="post-introduction-to-filebeat">
+          <header>
+            <h1 itemprop="name headline">Introduction to Filebeat</h1>
+            
+            <a href="/tag/Filebeat/"><span class="label label-primary">Filebeat</span></a>
+            
+            <a href="/tag/Logstash/"><span class="label label-primary">Logstash</span></a>
+            
+            <a href="/tag/ElasticSearch/"><span class="label label-primary">ElasticSearch</span></a>
+            
+            <a href="/tag/ELK/"><span class="label label-primary">ELK</span></a>
+            
+            <a href="/tag/data/"><span class="label label-primary">data</span></a>
+            
+            <a href="/tag/pipeline/"><span class="label label-primary">pipeline</span></a>
+            
+            <span class="date">24/07/2017</span> by <span class="author">Thomas Estrabaud</span>
+            <div class="share-panel">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="PCUConsortium" data-size="small">Tweet</a>
+  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-mobile-iframe="true"></div>
+  <script type="IN/Share"></script>
+  <div class="g-plus" data-action="share" data-annotation="none"></div>
+</div>
+
+          </header>
+          <main class="text-justify" itemprop="articleBody">
+            <div class="excerpt">
+              <p>Introduction to Filebeat on how to send data</p>
+            </div>
+            <div class="section">
+              <div class="sect1">
+<h2 id="introduction-to-filebeat">Introduction to Filebeat</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html">Official Filebeat doc link</a></p>
+</div>
+<div class="paragraph">
+<p>Filebeat is a very light tool to fetch data from a filesystem to send it to other tools like logstash, elastic, kafka or redis.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note :</strong> Filebeat is the only tool from elastic to have his configuration in yml, the other are using JSON.</p>
+</div>
+<div class="paragraph">
+<p>Filebeat use a system of prospectors to be able to have different configurations in the same instance.</p>
+</div>
+<div class="paragraph">
+<p>So first we define the field filebeat.prospectors which is a list in yml so :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>filebeat.prospectors:
+   -
+   -
+  [...]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We have two options to read data. You can either read from the console of from files with</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>input_type: log
+paths:
+  - /pathToData/*.log
+  - /pathToData2/*.txt</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can send this data to one or multiple output like these (a lot of the settings are by default)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Logstash:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>output.logstash:
+   hosts: ["localhost:5043"]</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ElasticSearch</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>output.elasticsearch:
+  hosts: ["localhost:9200"]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So for a really simple configuration file who will read only one file and sent it only to logstash we can have :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>filebeat.prospectors:
+   - input_type: log
+     paths:
+        - /pathToData/*.log
+output.logstash:
+   hosts: ["localhost:5043"]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Note :</strong> There is a lot of default configuration that can be seen in the file <code><code>filebeat.full.yml</code></code> and overwrited in you own configuration files.</p>
+</div>
+</div>
+</div>
+            </div>
+          </main>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer>
+    <div class="container-fluid">
+        <div class="row">
+          	<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+        			<nav>
+        			  <a href="/" title="homepage" class="logo-container">
+                  <span class="footer-logo-circle">
+                      <img alt="PCU logo" class="footer-logo-circle-img" src="/assets/images/logo-no-bg.png">
+                  </span>
+        			  </a>
+        			</nav>
+            </div>
+          	<div class="hidden-xs col-sm-6 col-md-2 col-lg-2">
+        			<nav>
+        			  <h6>PCU</h6>
+        			  <ul class="list-unstyled">
+                  
+                    <li>
+                        <a href="/overview">Overview</a>
+                    </li>
+                  
+                    <li>
+                        <a href="/use-cases">Use Cases</a>
+                    </li>
+                  
+                    <li>
+                        <a href="/resources">Resources</a>
+                    </li>
+                  
+                    <li>
+                        <a href="/news">News</a>
+                    </li>
+                  
+                    <li>
+                        <a href="/community">Community</a>
+                    </li>
+                  
+        			  </ul>
+        			</nav>
+          	</div>
+            <div class="hidden-xs col-sm-6 col-md-2 col-lg-2">
+              <nav>
+                <h6>Use Cases</h6>
+                <ul class="list-unstyled">
+                  
+                  <li><a href="#">Enterprise Search</a></li>
+                  
+                  <li><a href="#">E-Commerce</a></li>
+                  
+                  <li><a href="#">Customer Insight</a></li>
+                  
+                </ul>
+              </nav>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+              <nav>
+                <h6>About</h6>
+                <ul class="list-unstyled">
+                  
+                    <li>
+                        <a href="/brand-guideline">Brand Guideline</a>
+                    </li>
+                  
+                    <li>
+                        <a href="/terms-of-use">Terms of use</a>
+                    </li>
+                  
+                </ul>
+              </nav>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+      			  <nav id="socialNav">
+      				<h6 class="title">Follow Us</h6>
+      				<a alt="Github" href="https://github.com/pcu-consortium" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+      				<a alt="Twitter" href="https://twitter.com/PCUConsortium" target="_blank"><i class="fa fa-twitter fa-2x"></i>
+              </a><a alt="Facebook" href="https://facebook.com/pcu-consortium" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+              <a alt="Linkedin" href="https://www.linkedin.com/company/pcu-consortium" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+              <a alt="Slideshare" href="https://www.slideshare.net/pcuconsortium" target="_blank"><i class="fa fa-slideshare fa-2x"></i></a>
+              <p>© 2017 PCU Consortium</p>
+              </nav>
+      		  </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/assets/javascripts/jquery-3.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/assets/javascripts/bootstrap.min.js"></script>
+<script src="/assets/javascripts/pcu.js"></script>
+
+<!-- twitter -->
+<script>!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+    js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}
+  }(document, 'script', 'twitter-wjs');</script>
+
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- linkedin -->
+<script defer src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+
+<!-- Google -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98894093-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>

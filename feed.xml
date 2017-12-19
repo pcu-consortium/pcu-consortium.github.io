@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr_FR"><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://pcu-consortium.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://pcu-consortium.github.io/" rel="alternate" type="text/html" hreflang="fr_FR" /><updated>2017-12-19T18:06:54+01:00</updated><id>http://pcu-consortium.github.io/</id><title type="html">PCU</title><subtitle>Unified Knowledge Platform
+</subtitle><author><name>PCU Consortium</name></author><entry><title type="html">PCU Entreprise Search beta unveiled at Paris Open Source Summit</title><link href="http://pcu-consortium.github.io/news/2017/PCU-Entreprise-Search-unveiled-at-POSS/" rel="alternate" type="text/html" title="PCU Entreprise Search beta unveiled at Paris Open Source Summit" /><published>2017-12-15T15:00:00+01:00</published><updated>2017-12-15T15:00:00+01:00</updated><id>http://pcu-consortium.github.io/news/2017/PCU-Entreprise-Search-unveiled-at-POSS</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/PCU-Entreprise-Search-unveiled-at-POSS/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last week&amp;#8217;s &lt;a href=&quot;http://www.opensourcesummit.paris/&quot;&gt;Paris Open Source Summit&lt;/a&gt; was a very successful event by all accounts - on the whole and more particularly for the PCU project. A round of applause for the organizers, please : full conference rooms, overflowing boothes and alleys, a gullwinged Tesla and brimming with unmistakable energy - no doubt, this will be a Paris Open Source Summit for the ages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/assets/images/posts/20171206_poss_cravalec.jpg&quot; alt=&quot;Cédric Ravalec of Smile on the main stage&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Cédric Ravalec of Smile on the main stage&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;And what about PCU ? Well, very simply put, PCU has delivered its first release, even if still in beta : &lt;a href=&quot;https://owncloud.smile.eu/s/6toBC6N2VJv4EHC&quot;&gt;PCU Entreprise Search - try it out&lt;/a&gt; ! Even better, it is at the heart of a &lt;a href=&quot;https://www.smile.eu/fr/technologies/pcu-enterprise-search&quot;&gt;new Entreprise Search solution offering&lt;/a&gt; by Smile. Indeed, it&amp;#8217;s been some time that we&amp;#8217;ve seen this kind of needs at our customers', and now we have an asset to build our answers on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here&amp;#8217;s a screenshot :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/assets/images/posts/20171206_poss_pcu_entreprise_search_screenshot.png&quot; alt=&quot;PCU Entreprise Search beta screenshot&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;PCU Entreprise Search beta screenshot&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This new product has been showcased along with a live demo at the Paris Open Source Summit in a conference in the &lt;a href=&quot;http://www.opensourcesummit.paris/preinscription-conferences.html&quot;&gt;Dematerialization track&lt;/a&gt; - which I incidentally had the pleasure of helping lead - as an illustration of how to rethink Entreprise Search solutions in the Big Data era.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In short, by integrating Big Data components in a pluggable, flexible way, PCU allows for &quot;à la carte&quot; deployments of gradually increasing scale and functionalities :
+- deploying only ElasticSearch is enough to be able to use PCU Entreprise Search
+- adding Kafka enables scalable indexing, by going through asynchronous, partitioned message topics (the current version also needs Spark as an intermediary ETL engine)
+- later, adding Spark will allow to use intelligent features, such as search and recommendation that take advantage of Spark ML algorithms.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In details&amp;#8230;&amp;#8203; well, have a look at the slides :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;media slideshare&quot;&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/hTDZNL76EnOjlv&quot; width=&quot;344&quot; height=&quot;292&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Finally, as a first time track lead, I&amp;#8217;ve been very pleased by the attendance, both in quantity - sorry to those who had to stand up ! - and in quality, with a lot of insightful questions. So thank you all and see you next year !&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/assets/images/posts/20171206_poss_xwiki.jpg&quot; alt=&quot;Dematerialization track : Ludovic Dubost presenting Xwiki&quot; width=&quot;now in use at Amazon&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Dematerialization track : Ludovic Dubost presenting Xwiki, now in use at Amazon&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Marc DUTOO</name></author><category term="event" /><summary type="html">Last week's Paris Open Source Summit was a very successful event - on the whole and more particularly for the PCU project.</summary></entry><entry><title type="html">Open Source Enterprise Search Comparison</title><link href="http://pcu-consortium.github.io/news/2017/open_source_enterprise_search_comparison/" rel="alternate" type="text/html" title="Open Source Enterprise Search Comparison" /><published>2017-11-01T09:00:00+01:00</published><updated>2017-11-01T09:00:00+01:00</updated><id>http://pcu-consortium.github.io/news/2017/open_source_enterprise_search_comparison</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/open_source_enterprise_search_comparison/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;test&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Emmanuel Keller</name></author><category term="entreprise-search" /><category term="search" /><category term="open-source" /><summary type="html">Open Source Enterprise Search Comparison</summary></entry><entry><title type="html">A View On Cloud Storage Services</title><link href="http://pcu-consortium.github.io/news/2017/a_view_on_cloud_storage_services_and_related_protocols/" rel="alternate" type="text/html" title="A View On Cloud Storage Services" /><published>2017-11-01T09:00:00+01:00</published><updated>2017-11-01T09:00:00+01:00</updated><id>http://pcu-consortium.github.io/news/2017/a_view_on_cloud_storage_services_and_related_protocols</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/a_view_on_cloud_storage_services_and_related_protocols/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The goal of this paper is to identify the common storage concerns in a cloud environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;By listing the major Cloud storage services and the used protocols, we expect to have an idea of which type of connectors which should provide.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cloud-storage-services-list&quot;&gt;Cloud Storage Services list&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;table class=&quot;tableblock frame-all grid-all spread&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;col style=&quot;width: 25%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Name&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Vendor&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Description&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Supported protocols&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.swiftstack.com/&quot;&gt;SwiftStack Hybrid Cloud Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;SwiftStack&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;San Francisco-based developer of a commercial version of the open-source Swift object storage technology.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;NFS, SMB, Swift, S3&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://aws.amazon.com/efs/&quot;&gt;AWS Elastic File System&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Amazon&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Amazon EFS is a new, fully managed service for setting up and scaling file storage in the AWS Cloud.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;NFS, On premise connection (AWS Direct Connect)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Amazon AWS&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Provides storage through web services interfaces. Designed as a complete storage platform.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;S3 API, Local file server (AWS Storage gateway)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://aws.amazon.com/glacier/&quot;&gt;Amazon Glacier&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Amazon AWS&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;A secure, durable, and extremely low-cost cloud storage service for data archiving and long-term backup.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary API&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/services/storage/&quot;&gt;Azur Secure Cloud Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Microsoft&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Cloud service that provides storage that is highly available, secure, durable, scalable, and redundant. Azure Storage consists of Blob storage, File Storage, and Queue storage. Learn how to leverage Azure Storage in your applications with our quickstarts and tutorials.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Developer SDK, REST API&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;http://www.ctera.com/technology/platform/&quot;&gt;Ctera Enterprise File Services Platform&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Ctera, USA&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;File sync and share services that encourage user adoption while ensuring total governance over all methods of data access and storage – any device, any service, any location.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary Sync Agent&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://cloud.oracle.com/storage-classic&quot;&gt;Oracle Cloud Infrastructure Object Storage Service&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Oracle&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Enterprise-proven object storage and archive services for cloud-based data storage, sharing, and protection. Secure, resilient, elastic, and simple to use so that data is available when user need it from any environment connected to the Internet.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Swift REST API, Java client&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://docs.openstack.org/security-guide/object-storage.html&quot;&gt;OpenStack Object Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;OpenStack&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;OpenStack Object Storage (swift) service provides software that stores and retrieves data over HTTP. Objects (blobs of data) are stored in an organizational hierarchy that offers anonymous read-only access, ACL defined access, or even temporary access.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Swift, NFS, CIFS, GlusterFS, HDFS&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.rackspace.com/cloud/files&quot;&gt;Rackspace Scalable Cloud Object Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Rackspace&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Cloud Files provides online object storage for files and media, delivering them globally at blazing speeds over a worldwide content delivery network (CDN)&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Swift, NFS, Client API&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.emc.com/storage/atmos/atmos.htm&quot;&gt;Dell/EMC Elastic Cloud Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Dell/EMC&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;ECS brings all the benefits of a public cloud to your own datacenter while keeping its cost under control. It can be used for a wide variety of workloads such as deep archive, geo protection of Hadoop, Internet of Things.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;HDFS, Object storage API&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://cloud.google.com/storage/&quot;&gt;Google Cloud Storage&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Google&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;A unified offering across the availability spectrum: from live data tapped by today’s most demanding applications, to cloud archival solutions Nearline and Coldline. Featuring a consistent API, latency, and speed across storage classes.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Client API &amp;amp; libraries, Amazon S3&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.commvault.com/solutions/by-topic/cloud-data-management&quot;&gt;Commvault Cloud DataManagement&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Commvault&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Back up your databases, files, applications, endpoints and VMs with maximum efficiency according to data type and recovery profile. Integrate hardware snapshots. Optimize storage with deduplication.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary Agent and API&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.egnyte.com&quot;&gt;Egnyte Secure File Sharing&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Egnyte&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Egnyte Connect delivers Enterprise File Sync and share (EFSS), designed with businesses in mind, so IT can focus on security &amp;amp; performance, while users can access all their content from their desktop, mobile and browser&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary Clients (Desktop, mobile, web)&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.box.com&quot;&gt;Box Drive&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Box&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Create, edit and review documents with others in real time from anywhere, on any device.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary Clients, API &amp;amp; SDK&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;&lt;a href=&quot;https://www.dropbox.com&quot;&gt;DropBox&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Dropbox&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Dropbox creates a special folder on the user&amp;#8217;s computer, the contents of which are then synchronized to Dropbox&amp;#8217;s servers and to other computers and devices that the user has installed Dropbox on, keeping the same files up-to-date on all devices.&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;Proprietary Clients, API &amp;amp; SDK&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;crawling-use-cases&quot;&gt;Crawling use cases&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;file-system-sync-or-file-server&quot;&gt;File System (sync or file server)&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In this case, the vendor solution will expose the files in a local computer (desktop, server). using one of the two following methods:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A synchronization agent: This local daemon manages to synchronize the files in a local location.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using a file sharing service: The files are served using a common file protocol (NFS, CIFS).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The crawling process is done by browsing the directories using the standard file crawler.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Who ? Dropbox, Box, GoogleDrive, Microsoft OneDrive, OwnCloud, &amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;object-storage&quot;&gt;Object storage&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The files are exposed by a documented API. Some vendors may provide client implementations.
+The API can be standard (S3, SWIFT, HDFS) or proprietary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The crawling process only differ from the standard file crawler by calling an API to list the files and collect the content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Who ? Rackspace, OpenStack, AmazonS3, &amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;backup-vault-storage&quot;&gt;Backup &amp;amp; vault storage&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This kind of storage provides really specific API. First, the files are not directly visible. What is exposed first are backup entities (archives).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Most of the time, the access to the files is a slow (and complex) process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The crawling of those archives may be useful to index old data. However, it would probably more interesting to crawl the files before they enter the vault.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The files are exposed&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Comparison_of_file_hosting_services&quot;&gt;Comparison of File Hosting Services&lt;/a&gt;: Wikipedia, 2017.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.pcmag.com/roundup/306323/the-best-cloud-storage-providers-and-file-syncing-services&quot;&gt;The Best Cloud Storage and File-Sharing Services of 2017&lt;/a&gt;, PCMag, 2017.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.crn.com/slide-shows/cloud/300081410/the-10-coolest-enterprise-cloud-storage-offerings-in-2016-so-far.htm&quot;&gt;The 10 Coolest Enterprise Cloud Storage Offerings In 2016&lt;/a&gt; :
+By Joseph F. Kovar. TheChannelCo. 2016.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Emmanuel Keller</name></author><category term="Cloud" /><category term="Storage" /><category term="Protocols" /><summary type="html">A view on Cloud Storage Services and related protocols</summary></entry><entry><title type="html">Simple Spark-based indexing and more PCU progress at Paris’ Open Source innovation cluster</title><link href="http://pcu-consortium.github.io/news/2017/PCU-progress-at-GTLL/" rel="alternate" type="text/html" title="Simple Spark-based indexing and more PCU progress at Paris' Open Source innovation cluster" /><published>2017-10-11T16:00:00+02:00</published><updated>2017-10-11T16:00:00+02:00</updated><id>http://pcu-consortium.github.io/news/2017/PCU-progress-at-GTLL</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/PCU-progress-at-GTLL/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Last Wednesday&amp;#8217;s &lt;a href=&quot;https://systematic-paris-region.org/evenements/pleniere-gt-logiciel-libre/&quot;&gt;plenary meeting of the Open Source Paris innovation cluster&lt;/a&gt; (System@tic GTLL) wasn&amp;#8217;t like any other.
+Indeed, this was it&amp;#8217;s 10th birthday. How can I say it ? It was like having its cake and eating it - literally, and a very good chocolate cake at that.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There I had the pleasure of giving a quick report on the PCU project&amp;#8217;s progress in its first year. This was the opportunity to unveil its new tagline : &lt;strong&gt;Unified, search-first Machine Learning platform targeted at business applications&lt;/strong&gt;. That&amp;#8217;s the vision of PCU : bring your app and we&amp;#8217;ll make it smart. And starting with smart search - we think almost every app can get benefits out of smart search.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I also couldn&amp;#8217;t resist hinting at its &lt;a href=&quot;https://github.com/pcu-consortium/poc-inAndOutSpark&quot;&gt;innovative YAML-configured ETL on Spark&lt;/a&gt;. More could be said about this : that it brings Spark&amp;#8217;s data transformation and modeling power to masses, that it also works in streaming mode (including &lt;a href=&quot;https://github.com/pcu-consortium/poc-inAndOutSpark/blob/master/src/main/java/streaming/EsForeachWriter.java&quot;&gt;directly to ElasticSearch&lt;/a&gt; - would that be a world first ?), that all that makes it very appropriate as PCU&amp;#8217;s data ingestion and indexing pipeline. But it&amp;#8217;s still a prototype, and there&amp;#8217;ll soon be better times and places to delve into it - hint, hint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Anyway, the slides shown at the meeting have been uploaded to &lt;a href=&quot;https://www.slideshare.net/pcuconsortium&quot;&gt;Slideshare&lt;/a&gt;, here they are :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;media slideshare&quot;&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/iSRQ7cYu9jW1Nb&quot; width=&quot;344&quot; height=&quot;292&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Obviously, the meeting didn&amp;#8217;t end there. As usual, there were plenty of mind-opening innovative ideas showcased. For instance, &lt;a href=&quot;https://github.com/Wolphin-project&quot;&gt;Wolphin&lt;/a&gt; lead by &lt;a href=&quot;https://twitter.com/jonascript&quot;&gt;Jonathan Rivalan&lt;/a&gt; of AlterWay, which aims to offer smart monitoring for Docker Swarm (would that make it &quot;swarmt&quot; ?!). Or Karima Rafes' Bordercloud clever use of Linked Data to &lt;a href=&quot;http://www.bordercloud.com/LinkedWikiPlatform.php&quot;&gt;organize the data scientist&amp;#8217;s work environement&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;And unsurprisingly, the final networking session confirmed that the people behind those ideas are necessarily very, very interesting. So, very happy to have met for the first time Laurent, Fabrice, Didier. And thanks for your nice feedback about PCU. Again, people, bring us your application, we&amp;#8217;ll make it smart !&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;/assets/images/posts/20171004_gtll_networking.jpg&quot; alt=&quot;Birthday cake time at GTLL&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Marc DUTOO</name></author><category term="event" /><summary type="html">Last Wednesday's plenary meeting of the Open Source Paris innovation cluster (System@tic GTLL) wasn't like any other. Indeed, this was it's 10th birthday.</summary></entry><entry><title type="html">Introduction to Logstash</title><link href="http://pcu-consortium.github.io/news/2017/Introduction-to-Logstash/" rel="alternate" type="text/html" title="Introduction to Logstash" /><published>2017-07-25T15:00:00+02:00</published><updated>2017-07-25T15:00:00+02:00</updated><id>http://pcu-consortium.github.io/news/2017/Introduction-to-Logstash</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/Introduction-to-Logstash/">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;logstash-presentation&quot;&gt;Logstash presentation&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.fr/search?client=ubuntu&amp;amp;channel=fs&amp;amp;q=doc+logstash&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;gfe_rd=cr&amp;amp;ei=2vt2WfCnOujUXq75raAP&quot;&gt;(Link to the official documentation)&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Logstash is a tool to fetch data from a source and send it to a destination while doing some transformation on it on the fly. It has been specially designed and used to send data to ElasticSearch.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is able to take multiple entries and output at a time and can make use of conditionals to treat data differently based on criteria and conditionals.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It uses a configuration file in a slighty modified JSON (described below).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;logstash-configuration&quot;&gt;Logstash configuration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Logstash configuration is separated in 3 parts :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Input&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Filter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Output&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock note&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+Each part can be in a different file (in the same folder) and we only need to give the folder to Logstash (it will concatenate the different files).
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;input&quot;&gt;Input&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The different inputs are in the field &lt;code&gt;&lt;code&gt;input&lt;/code&gt;&lt;/code&gt; and you can put more than one in it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There is a list of different &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/input-plugins.html&quot;&gt;input plugins&lt;/a&gt; and we will see a few of them here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock note&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+A lot of fields are set by default and are fine like that for a simple utilisation. For more parameters do check the link above.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;read-a-file-on-a-local-file-system&quot;&gt;Read a file on a local file system&lt;/h4&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  file {
+    start_position =&amp;gt; &quot;beginning&quot;
+    sincedb_path =&amp;gt; &quot;/pathToSincedb/sincedb&quot;
+    path =&amp;gt; &quot;/pathToYourData/*&quot;
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;underline&quot;&gt;What does it do ?&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This will read all the files that are in the folder &lt;code&gt;&lt;code&gt;pathToYourData&lt;/code&gt;&lt;/code&gt; since the beginning of the file line by line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The &lt;code&gt;&lt;code&gt;sincedb_path &amp;#8658; &quot;/pathToSincedb/sincedb&quot;&lt;/code&gt;&lt;/code&gt; let you set the path of the sincedb file that save which file you have already read and to where. So if your file has been updated the modification are taken  into account by Logstash.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock warning&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-warning&quot; title=&quot;Warning&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+Logstash will ignore files that haven&amp;#8217;t been modified for more than 24 hours. A little &lt;code&gt;&lt;code&gt;touch myFile&lt;/code&gt;&lt;/code&gt; will resolve this problem
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;read-data-from-kafka&quot;&gt;Read data from Kafka&lt;/h4&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  kafka{
+    topic =&amp;gt; [&quot;myTopic1&quot;, &quot;myTopic2&quot;]
+    auto_offset_reset =&amp;gt; &quot;earliest&quot;
+    bootstrap_servers =&amp;gt; [&quot;localhost:9092&quot;, &quot;localhost:9093&quot;]
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;underline&quot;&gt;What does it do ?&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This configuration will make Logstash consume on the topics &lt;code&gt;&lt;code&gt;myTopic1&lt;/code&gt;&lt;/code&gt; and &lt;code&gt;&lt;code&gt;myTopic2&lt;/code&gt;&lt;/code&gt; from the last offset commited or the earliest message if there is no offest (with the field &lt;code&gt;&lt;code&gt;auto_offset_reset&lt;/code&gt;&lt;/code&gt;) on the IPs &lt;code&gt;&lt;code&gt;localhost:9092&lt;/code&gt;&lt;/code&gt; and &lt;code&gt;&lt;code&gt;localhost:9093&lt;/code&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;read-data-from-elasticsearch&quot;&gt;Read data from ElasticSearch&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is particulary imporant to be able to read from ElasticSearch for reindexing or simply get the data to put it elsewhere.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  elasticsearch {
+    hosts =&amp;gt; [&quot;localhost&quot;]
+    index =&amp;gt; &quot;myIndex&quot;
+    query =&amp;gt; &quot;*&quot;
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;underline&quot;&gt;What does it do ?&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is one of the simplest configuration that will take all the data from the &lt;code&gt;&lt;code&gt;myIndex&lt;/code&gt;&lt;/code&gt; mapping.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;read-data-from-filebeat&quot;&gt;Read data from Filebeat&lt;/h4&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  beats {
+    port =&amp;gt; &quot;5044&quot;
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;underline&quot;&gt;What does it do ?&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With this configuration, Logstash will listen to the port 5044 where Filebeat is supposed to send data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;read-data-from-multiple-input&quot;&gt;Read data from multiple input&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If we want to have multiple output we only have to put them in the input field one after another.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  file {
+    start_position =&amp;gt; &quot;beginning&quot;
+    sincedb_path =&amp;gt; &quot;/pathToSincedb/sincedb&quot;
+    path =&amp;gt; &quot;/pathToYourData/*&quot;
+  }
+  kafka {
+    topic =&amp;gt; [&quot;myTopic1&quot;, &quot;myTopic2&quot;]
+    auto_offset_reset =&amp;gt; &quot;earliest&quot;
+    bootstrap_servers =&amp;gt; [&quot;localhost:9092&quot;, &quot;localhost:9093&quot;]
+  }
+  elasticsearch {
+    hosts =&amp;gt; [&quot;localhost&quot;]
+    index =&amp;gt; &quot;myIndex&quot;
+    query =&amp;gt; &quot;*&quot;
+  }
+  beats {
+    port =&amp;gt; &quot;5044&quot;
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;determine-the-origin-of-data&quot;&gt;Determine the origin of data&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you have multiple output you won&amp;#8217;t know in the filter and output where you data come from as you don&amp;#8217;t have a notion of pipeline in logstash. To keep this information you have to put a tag in the &lt;code&gt;&lt;code&gt;input&lt;/code&gt;&lt;/code&gt; like below.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input {
+  file {
+    tags =&amp;gt; &quot;FILE&quot;
+    start_position =&amp;gt; &quot;beginning&quot;
+    sincedb_path =&amp;gt; &quot;/pathToSincedb/sincedb&quot;
+    path =&amp;gt; &quot;/pathToYourData/*&quot;
+  }
+  kafka {
+    tags =&amp;gt; &quot;KAFKA&quot;
+    topic =&amp;gt; [&quot;myTopic1&quot;, &quot;myTopic2&quot;]
+    auto_offset_reset =&amp;gt; &quot;earliest&quot;
+    bootstrap_servers =&amp;gt; [&quot;localhost:9092&quot;, &quot;localhost:9093&quot;]
+  }
+}&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With that, in the &lt;code&gt;&lt;code&gt;filter&lt;/code&gt;&lt;/code&gt; and &lt;code&gt;&lt;code&gt;output&lt;/code&gt;&lt;/code&gt; we will only have to test the tag and know where our data come from.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;filter&quot;&gt;Filter&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;WORK IN PROGRESS - COME BACK LATER FOR SOME MORE AMAZING CONTENT !&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Thomas Estrabaud</name></author><category term="Filebeat" /><category term="Logstash" /><category term="ElasticSearch" /><category term="ELK" /><category term="data" /><category term="pipeline" /><summary type="html">Introduction to Logstash on how to get and send data</summary></entry><entry><title type="html">Introduction to Filebeat</title><link href="http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/" rel="alternate" type="text/html" title="Introduction to Filebeat" /><published>2017-07-24T12:00:00+02:00</published><updated>2017-07-24T12:00:00+02:00</updated><id>http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/Introduction-to-Filebeat/">&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;introduction-to-filebeat&quot;&gt;Introduction to Filebeat&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.elastic.co/guide/en/beats/filebeat/current/configuring-howto-filebeat.html&quot;&gt;Official Filebeat doc link&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Filebeat is a very light tool to fetch data from a filesystem to send it to other tools like logstash, elastic, kafka or redis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; Filebeat is the only tool from elastic to have his configuration in yml, the other are using JSON.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Filebeat use a system of prospectors to be able to have different configurations in the same instance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So first we define the field filebeat.prospectors which is a list in yml so :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;filebeat.prospectors:
+   -
+   -
+  [...]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We have two options to read data. You can either read from the console of from files with&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;input_type: log
+paths:
+  - /pathToData/*.log
+  - /pathToData2/*.txt&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can send this data to one or multiple output like these (a lot of the settings are by default)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Logstash:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;output.logstash:
+   hosts: [&quot;localhost:5043&quot;]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ElasticSearch&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;output.elasticsearch:
+  hosts: [&quot;localhost:9200&quot;]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;So for a really simple configuration file who will read only one file and sent it only to logstash we can have :&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;filebeat.prospectors:
+   - input_type: log
+     paths:
+        - /pathToData/*.log
+output.logstash:
+   hosts: [&quot;localhost:5043&quot;]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt; There is a lot of default configuration that can be seen in the file &lt;code&gt;&lt;code&gt;filebeat.full.yml&lt;/code&gt;&lt;/code&gt; and overwrited in you own configuration files.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name>Thomas Estrabaud</name></author><category term="Filebeat" /><category term="Logstash" /><category term="ElasticSearch" /><category term="ELK" /><category term="data" /><category term="pipeline" /><summary type="html">Introduction to Filebeat on how to send data</summary></entry><entry><title type="html">PCU@RISE 2017 A thesaurus for ecommerce search</title><link href="http://pcu-consortium.github.io/news/2017/PCU-RISE-2017-slides/" rel="alternate" type="text/html" title="PCU@RISE 2017 A thesaurus for ecommerce search" /><published>2017-07-07T16:00:00+02:00</published><updated>2017-07-07T16:00:00+02:00</updated><id>http://pcu-consortium.github.io/news/2017/PCU-RISE-2017-slides</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/PCU-RISE-2017-slides/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Slides of the &quot;Building a thesaurus for product search in ecommerce&quot; talk given at the &lt;a href=&quot;https://sites.google.com/site/frenchsemanticir/home/rise_2017&quot;&gt;RISE 2017&lt;/a&gt; conference in Caen
+have been uploaded to &lt;a href=&quot;https://www.slideshare.net/pcuconsortium&quot;&gt;Slideshare&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;media slideshare&quot;&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/wZaAMCx8GdpMMs&quot; width=&quot;344&quot; height=&quot;292&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt;&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Check it out to find out about how &lt;a href=&quot;http://www.smile.fr&quot;&gt;Smile&lt;/a&gt; dreams up a &lt;strong&gt;Machine Learning-enabled future
+for ecommerce&lt;/strong&gt; and its Magento Elastic Suite searchandising solution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class='jekyll-twitter-plugin'&gt;&lt;blockquote class=&quot;twitter-tweet&quot; data-width=&quot;300&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/GroupeSmile?ref_src=twsrc%5Etfw&quot;&gt;@GroupeSmile&lt;/a&gt; dreams up a &lt;a href=&quot;https://twitter.com/hashtag/MachineLearning?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#MachineLearning&lt;/a&gt; future for ecommerce and &lt;a href=&quot;https://twitter.com/hashtag/Magento?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#Magento&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/Elastic?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#Elastic&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/hashtag/IC?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#IC&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/RISE?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#RISE&lt;/a&gt; &lt;a href=&quot;https://twitter.com/lab_smile?ref_src=twsrc%5Etfw&quot;&gt;@lab_smile&lt;/a&gt; &lt;a href=&quot;https://t.co/tBhzLRPdv9&quot;&gt;https://t.co/tBhzLRPdv9&lt;/a&gt; &lt;a href=&quot;https://t.co/a6eU0hyUlb&quot;&gt;pic.twitter.com/a6eU0hyUlb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Marc Dutoo (@marcdutoo) &lt;a href=&quot;https://twitter.com/marcdutoo/status/883272621021966336?ref_src=twsrc%5Etfw&quot;&gt;July 7, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;Congratulations&lt;/strong&gt; to PCU partner &lt;a href=&quot;http://lipn.univ-paris13.fr/en/&quot;&gt;LIPN&lt;/a&gt;'s Haïfa Zargayouna for having put together
+once again one of the leading research events about semantic search ! And a very good opportunity to organize collaboration
+in the PCU project with colleague Guillaume Santini and ESILV&amp;#8217;s Fatma Chamekh.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class='jekyll-twitter-plugin'&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/PCUConsortium?ref_src=twsrc%5Etfw&quot;&gt;@PCUConsortium&lt;/a&gt; meeting is in &lt;a href=&quot;https://twitter.com/hashtag/IC?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#IC&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/RISE?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#RISE&lt;/a&gt;. Guys!!! 🤣🤣 &lt;a href=&quot;https://t.co/Uj72V6p5Ij&quot;&gt;pic.twitter.com/Uj72V6p5Ij&lt;/a&gt;&lt;/p&gt;&amp;mdash; PCU Consortium (@PCUConsortium) &lt;a href=&quot;https://twitter.com/PCUConsortium/status/882934039895846914?ref_src=twsrc%5Etfw&quot;&gt;July 6, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;</content><author><name>Marc DUTOO</name></author><category term="event" /><summary type="html">Slides of the &quot;Building a thesaurus for product search in ecommerce&quot; at RISE 2017 conference in Caen are available</summary></entry><entry><title type="html">Welcome on PCU!</title><link href="http://pcu-consortium.github.io/news/2017/welcome-on-PCU/" rel="alternate" type="text/html" title="Welcome on PCU!" /><published>2017-05-16T21:00:00+02:00</published><updated>2017-05-16T21:00:00+02:00</updated><id>http://pcu-consortium.github.io/news/2017/welcome-on-PCU</id><content type="html" xml:base="http://pcu-consortium.github.io/news/2017/welcome-on-PCU/">&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Welcome on PCU website, it&amp;#8217;s the first post of a long serie.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Gregory EVE</name></author><summary type="html">Welcome on PCU website, it&amp;#8217;s the first post of a long serie.</summary></entry></feed>
