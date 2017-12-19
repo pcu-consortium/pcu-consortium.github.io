@@ -8,19 +8,21 @@ tags: event
 excerpt: Last week's Paris Open Source Summit was a very successful event - on the whole and more particularly for the PCU project.
 ---
 
-Last week's [Paris Open Source Summit](http://www.opensourcesummit.paris/) was a very successful event by all accounts - on the whole and more particularly for the PCU project. A round of applause for the organizers, please : full conference rooms, overflowing boothes and alleys, a gullwinged Tesla and brimming with unmistakable energy - no doubt, this will be a Paris Open Source Summit for the ages.
+Last week's http://www.opensourcesummit.paris/[Paris Open Source Summit] was a very successful event by all accounts - on the whole and more particularly for the PCU project. A round of applause for the organizers, please : full conference rooms, overflowing boothes and alleys, a gullwinged Tesla and brimming with unmistakable energy - no doubt, this will be a Paris Open Source Summit for the ages.
 
 image:/assets/images/posts/20171206_poss_cravalec.jpg[Cédric Ravalec of Smile on the main stage]
+
 _Cédric Ravalec of Smile on the main stage_
 
-And what about PCU ? Well, very simply put, PCU has delivered its first release, even if still in beta : [PCU Entreprise Search - try it out](https://owncloud.smile.eu/s/6toBC6N2VJv4EHC) ! Even better, it is at the heart of a [new Entreprise Search solution offering](https://www.smile.eu/fr/technologies/pcu-enterprise-search) by Smile. Indeed, it's been some time that we've seen this kind of needs at our customers', and now we have an asset to build our answers on.
+And what about PCU ? Well, very simply put, PCU has delivered its first release, even if still in beta : https://owncloud.smile.eu/s/6toBC6N2VJv4EHC[PCU Entreprise Search - try it out] ! Even better, it is at the heart of a https://www.smile.eu/fr/technologies/pcu-enterprise-search[new Entreprise Search solution offering] by Smile. Indeed, it's been some time that we've seen this kind of needs at our customers', and now we have an asset to build our answers on.
 
 Here's a screenshot :
 
 image:/assets/images/posts/20171206_poss_pcu_entreprise_search_screenshot.png[PCU Entreprise Search beta screenshot]
+
 _PCU Entreprise Search beta screenshot_
 
-This new product has been showcased along with a live demo at the Paris Open Source Summit in a conference in the [Dematerialization track](http://www.opensourcesummit.paris/preinscription-conferences.html) - which I incidentally had the pleasure of helping lead - as an illustration of how to rethink Entreprise Search solutions in the Big Data era.
+This new product has been showcased along with a live demo at the Paris Open Source Summit in a conference in the http://www.opensourcesummit.paris/preinscription-conferences.html[Dematerialization track] - which I incidentally had the pleasure of helping lead - as an illustration of how to rethink Entreprise Search solutions in the Big Data era.
 
 In short, by integrating Big Data components in a pluggable, flexible way, PCU allows for "à la carte" deployments of gradually increasing scale and functionalities :
 - deploying only ElasticSearch is enough to be able to use PCU Entreprise Search
@@ -36,4 +38,5 @@ In details... well, have a look at the slides :
 Finally, as a first time track lead, I've been very pleased by the attendance, both in quantity - sorry to those who had to stand up ! - and in quality, with a lot of insightful questions. So thank you all and see you next year !
 
 image:/assets/images/posts/20171206_poss_xwiki.jpg[Dematerialization track : Ludovic Dubost presenting Xwiki, now in use at Amazon]
+
 _Dematerialization track : Ludovic Dubost presenting Xwiki, now in use at Amazon_
